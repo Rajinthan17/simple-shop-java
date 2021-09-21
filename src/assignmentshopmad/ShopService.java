@@ -124,7 +124,7 @@ public class ShopService {
     void saveData(String code, String price) {
         try{
             Statement statement = con.createStatement();
-            String sql = "UPDATE items SET item_price = "+Double.parseDouble(price)+" WHERE item_code = " + code;
+            String sql = "UPDATE items SET item_price = "+Double.parseDouble(price)+" WHERE item_code = '" + code + "'";
             statement.executeUpdate(sql);
             sucessMsg("Sucessfully Update");
         }catch(SQLException ex){ 

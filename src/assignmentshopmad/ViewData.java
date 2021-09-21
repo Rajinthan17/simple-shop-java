@@ -40,6 +40,7 @@ public class ViewData extends javax.swing.JFrame {
         viewTabel = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         viewTabel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -87,6 +88,7 @@ public class ViewData extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
